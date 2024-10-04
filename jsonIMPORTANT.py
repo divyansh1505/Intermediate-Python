@@ -1,4 +1,4 @@
-import json  # Import the JSON module to handle JSON data
+import json 
 
 # Define a class named User
 class User:  

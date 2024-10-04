@@ -3,6 +3,20 @@
 # This allows you to "wrap" an existing function in additional 
 # functionality.
 
+def basicdecoraters(func):
+
+    def wrapper():
+        print("Print this before the function")
+        func()
+        print("Print this after the function")
+    return wrapper
+
+@basicdecoraters
+def printer():
+    print("Divyansh Dubey")
+
+printer()
+
 n = input("Enter your name : ")
 
 def start_end_decorator(func):
@@ -42,3 +56,5 @@ def say_hello():
 
 say_hello()
 say_hello()
+
+
